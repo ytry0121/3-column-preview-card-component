@@ -1,0 +1,79 @@
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    /* (paragraphs) */
+    --white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+    color: var(--veryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--white);
+}
+
+.section {
+    display: flex;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.bse {
+    background-color: var(--brightOrange);
+}
+
+.bsu {
+    background-color: var(--darkCyan);
+}
+
+.blu {
+    background-color: var(--veryDarkCyan);
+}
+
+.button {
+    background-color: var(--veryLightGray);
+    border-radius: 15px;
+    padding:10px;
+    width:40%;
+}
+
+.button:hover {
+    color: var(--veryLightGray);
+}
+
+.cse {
+    color: var(--brightOrange);
+}
+
+.cse:hover {
+    background-color: var(--brightOrange);
+}
+
+.csu {
+    color: var(--darkCyan);
+}
+
+.csu:hover {
+    background-color: var(--darkCyan);
+}
+
+.clu {
+    color: var(--veryDarkCyan);
+}
+
+.clu:hover {
+    background-color: var(--veryDarkCyan);
+}
