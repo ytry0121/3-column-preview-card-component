@@ -7,32 +7,52 @@
     /* (background, headings, buttons) */
     --veryLightGray: hsl(0, 0%, 95%);
 }
-
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+}
 body {
     color: var(--veryLightGray);
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 2rem 0;
 }
 
 p {
     color: var(--white);
+    opacity: 0.8;
+    line-height: 1.7;
+    margin:0
 }
 
 .section {
     display: flex;
+    max-width: 920px;
+    height:500px;
+    margin: 0 auto;
 }
 
 .card {
-    padding: 1rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    flex: 1;
 }
 
 .bse {
     background-color: var(--brightOrange);
+    border-radius: 10px 0px 0px 10px ;
 }
 
 .bsu {
@@ -41,17 +61,20 @@ p {
 
 .blu {
     background-color: var(--veryDarkCyan);
+    border-radius: 0px 10px 10px 0px;
 }
 
 .button {
     background-color: var(--veryLightGray);
-    border-radius: 15px;
-    padding:10px;
-    width:40%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 15px;
+    width: 145px;
 }
 
 .button:hover {
     color: var(--veryLightGray);
+    border:2px solid var(--veryLightGray);
 }
 
 .cse {
@@ -76,4 +99,19 @@ p {
 
 .clu:hover {
     background-color: var(--veryDarkCyan);
+}
+
+@media screen and (max-width: 500px) {
+    .section {
+        display: block;
+    }  
+    .bse {
+        border-radius: 10px 10px 0px 0px  ;
+    }
+    
+    .blu {
+        background-color: var(--veryDarkCyan);
+        border-radius: 0px 0px 10px 10px ;
+    }
+    
 }
