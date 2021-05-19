@@ -35,7 +35,9 @@ p {
     line-height: 1.7;
     margin:0
 }
-
+.container{
+    padding:5rem 2rem;   
+   }
 .section {
     display: flex;
     max-width: 920px;
@@ -101,10 +103,21 @@ p {
     background-color: var(--veryDarkCyan);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
+    html,body{
+        height: unset;
+    }
+    .container{
+     padding:5rem 1rem;   
+    }
     .section {
         display: block;
-    }  
+        height: auto;
+        max-width: 400px;
+    } 
+    .card{
+        height: 445px;
+    } 
     .bse {
         border-radius: 10px 10px 0px 0px  ;
     }
